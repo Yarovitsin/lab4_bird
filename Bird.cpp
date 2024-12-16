@@ -22,6 +22,7 @@ Bird Bird::operator+(Bird bird) {
 	sprintf(new_bird_species, "%s%s", species, bird.species);
 	strcpy(new_bird.name, new_bird_name);
 	strcpy(new_bird.species, new_bird_species);
+	new_bird.age = age + bird.age;
 	return new_bird;
 }
 
